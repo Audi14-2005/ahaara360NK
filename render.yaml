@@ -14,7 +14,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: ALLOWED_HOSTS
-        value: aahaara-360-backend.onrender.com
+        value: "*"
       - key: GEMINI_API_KEY
         sync: false
     healthCheckPath: /admin/
