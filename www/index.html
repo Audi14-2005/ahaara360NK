@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAHAARA 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5aa0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #2c5aa0;
+        }
+        .feature-title {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 5px;
+        }
+        .api-link {
+            display: block;
+            background: #2c5aa0;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .api-link:hover {
+            background: #1e3d6f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AAHAARA 360</h1>
+        <p>Welcome to AAHAARA 360 - Your comprehensive health and wellness platform.</p>
+        
+        <div class="feature-card">
+            <div class="feature-title">🍎 Diet Planner</div>
+            <p>Get personalized Ayurvedic diet plans based on your dosha type.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-title">📱 Food Scanner</div>
+            <p>Scan food items to get nutritional information and Ayurvedic properties.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-title">🏥 Medical OCR</div>
+            <p>Upload medical documents for AI-powered analysis and insights.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-title">💬 Health Chat</div>
+            <p>Get instant health advice from our AI-powered chatbot.</p>
+        </div>
+        
+        <a href="https://aahaara-360-backend.onrender.com" class="api-link">Open Web Dashboard</a>
+        <a href="https://aahaara-360-backend.onrender.com/api/" class="api-link">API Documentation</a>
+    </div>
+
+    <script>
+        // Capacitor plugin integration
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('AAHAARA 360 Mobile App Loaded');
+            
+            // Check if running in Capacitor
+            if (window.Capacitor) {
+                console.log('Running in Capacitor environment');
+            } else {
+                console.log('Running in web browser');
+            }
+        });
+    </script>
+</body>
+</html>
